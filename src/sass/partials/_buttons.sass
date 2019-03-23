@@ -1,0 +1,42 @@
+a.button,
+.button,
+button,
+input[type="submit"],
+input[type="reset"],
+input[type="button"]
+    color: #fff
+    display: inline-block
+    font-size: 12px
+    line-height: 1em
+    cursor: pointer
+    padding: 10px 25px 10px !important
+    background: #333
+    border: 0
+    text-align: left
+    text-transform: uppercase
+    appearance: none
+    -webkit-appearance: none
+    -moz-appearance: none
+    transition: all .25s ease
+    -moz-transition: all .25s ease
+    -webkit-transition: all .25s ease
+    outline: 0
+    border: 1px solid #111
+    border-bottom: 3px solid #111
+    border-radius: 5px
+    font-weight: bold
+    position: relative
+    bottom: 0
+
+    &:hover
+        background: #111
+    	color: #fff
+    	text-decoration: none
+    	transform: scale(1.025)
+    	bottom: 4px
+    	box-shadow: 0 0 10px rgba(0,0,0,.25)
+
+    &:disabled
+      	background: #ccc
+    	-webkit-appearance: none
+    	cursor: default
