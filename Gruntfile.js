@@ -57,7 +57,7 @@ module.exports = grunt => {
           files: [{
               expand: true,
               cwd: 'src/',
-              src: ['images/**/*.{png,jpg,gif}'],
+              src: ['images/**/*.{png,jpg,gif,svg}'],
               dest: 'dist'
           }]
       }
@@ -146,9 +146,8 @@ module.exports = grunt => {
   if(process.env.NODE_ENV == 'production')
   {
     grunt.registerTask('default', ['pug', 'sass', 'copy', 'imagemin', 'cssmin', 'babel'])
-  }else 
+  }else
   {
     grunt.registerTask('default', ['pug', 'sass', 'copy', 'imagemin', 'browserSync', 'babel', 'watch'])
   }
 };
-

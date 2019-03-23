@@ -1,0 +1,42 @@
+#hero
+	text-align: center
+	position: relative
+	background: #fff url('../images/hero-bkg.jpg') center center no-repeat fixed
+	background-size: cover
+	-moz-background-size: cover
+	-webkit-background-size: cover
+	-o-background-size: cover
+	height: 100vh
+
+	.content
+		position: absolute
+		width: 100%
+		top: 63%
+		margin-top: 0px
+
+		p
+			font-size: 21px
+			margin-bottom: -5px
+
+	.logo
+		width: 50px
+		margin: 0 auto
+		text-align: center
+		padding: 30px 0
+		position: absolute
+		left: 50%
+		margin-left: -25px
+
+// Responsiveness
+@media screen and (max-width: 640px)
+	#hero
+		background-attachment: scroll
+
+		.content
+			p
+				font-size: 18px
+
+			h1
+				font-size: 36px
+				line-height: 1.2em
+				margin-top: 10px
