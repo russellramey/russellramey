@@ -1,0 +1,62 @@
+-
+    var tech = [
+        {
+            title: "HTML5",
+            icon: "logo_html.svg",
+        },
+        {
+            title: "CSS3",
+            icon: "logo_css.svg",
+        },
+        {
+            title: "Sass",
+            icon: "logo_sass.svg",
+        },
+        {
+            title: "Javascript",
+            icon: "logo_js.svg",
+        },
+        {
+            title: "Jquery",
+            icon: "logo_jquery.svg",
+        },
+        {
+            title: "Bootstrap",
+            icon: "logo_bootstrap.svg",
+        },
+        {
+            title: "Vue",
+            icon: "logo_vue.svg",
+        },
+        {
+            title: "Laravel",
+            icon: "logo_laravel.svg",
+        },
+        {
+            title: "Wordpress",
+            icon: "logo_wordpress.svg",
+        },
+        {
+            title: "PHP",
+            icon: "logo_php.svg",
+        },
+        {
+            title: "MySQL",
+            icon: "logo_mysql.svg",
+        },
+        {
+            title: "Git",
+            icon: "logo_git.svg",
+        }
+    ]
+-
+
+#tech.content-section
+    .container
+        h2 Technologies
+        p Below are some of the most popular - and essential - web technologies I utilize to create the websites & apps that I build. I have adopted these as my “go to” technologies for building things on the web. I am fluent and proficient in all the languages, frameworks, version control, and software listed below.
+        
+        ul
+            each skill in tech 
+                li.tech-item
+                    img(src="images/tech/" + skill.icon + "" width="auto" height="auto" alt="" + skill.title + "")
