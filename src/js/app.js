@@ -1,4 +1,77 @@
-// Get all qt-tooltips
+$(document).ready(function(){
+    // FORMS
+    $('.sdl-form').simple_dynamic_labels();
+
+    // NAV
+    $('#hamburger').click(function(){
+        $(this).toggleClass('open');
+        $('#nav').toggleClass('nav-open');
+        return false;
+    });
+
+    // SMOOTH SCROLLING
+    $(function() {
+      $('a[href*="#"]:not([href="#"])').click(function() {
+        if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+          var target = $(this.hash);
+          target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+          if (target.length) {
+            $('html, body').animate({
+              scrollTop: target.offset().top
+
+          }, 500);
+
+            // Close nav
+            $('#nav, .hamburger-nav').removeClass('nav-open');
+            $('#hamburger').removeClass('open');
+            return false;
+          }
+        }
+
+      });
+    });
+});
+
+// Simple Dynamic Labels
+$.fn.simple_dynamic_labels = function (){
+
+    // Find inputs
+    var inputs = $(this).find('input, textarea, select');
+
+    // Find labels
+    var labels = $(this).find('label.sdl-label');
+        $(labels).parent().css('position', 'relative');
+
+    // Set active class
+    var active = "has-value";
+
+    // For each input
+    $(inputs).each(function(){
+        // On focus
+        $(this).focus(function() {
+            if(!$(this).val()) {
+                $(this).parent().find(labels).addClass(active);
+            }
+        });
+
+        // On blur
+        $(this).blur(function() {
+            if($(this).val() ) {
+                $(this).parent().find(labels).addClass(active);
+            } else {
+                $(this).parent().find(labels).removeClass(active);
+            }
+        });
+
+        // Has value
+        if($(this).val() ) {
+            $(this).parent().find(labels).addClass(active);
+        }
+    });
+};
+
+
+// Tooltips
 var tooltips = document.querySelectorAll("[data-qt]");
 // If qt-tooltip elements exist
 if (tooltips.length > 0){

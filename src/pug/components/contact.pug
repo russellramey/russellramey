@@ -1,16 +1,16 @@
 #contact
     .container.content-section
         
-        form#contactform(action="assets/inc/form_submit.php" method="post")
+        form#contactform(action="assets/inc/form_submit.php" method="post" class="sdl-form")
             #form-results 
             
             h2 Let's Chat
             p.form-field
-                label(for="name") Name
+                label(for="name" class="sdl-label") Name
                 input(type="text" name="name" id="name" required)
                     
             p.form-field
-                label(for="email") Email
+                label(for="email" class="sdl-label") Email
                 input(type="email" name="email" id="email" required)
                     
             p.form-field(style="display:none")
@@ -18,8 +18,8 @@
                 input(type="text" name="subject" id="subject")
                     
             p.form-field
-                label(for="comments") Comments
-                textarea(name="comments" id="comments" required)
+                label(for="comments" class="sdl-label") Comments
+                textarea(name="comments" id="comments" required style="min-height:140px")
                     
             p.form-field 
                 input(type="submit" name="submit" id="submit" value="Drop a line")
