@@ -1,0 +1,25 @@
+#contact
+    .container.content-section
+        
+        form#contactform(action="assets/inc/form_submit.php" method="post")
+            #form-results 
+            
+            h2 Let's Chat
+            p.form-field
+                label(for="name") Name
+                input(type="text" name="name" id="name" required)
+                    
+            p.form-field
+                label(for="email") Email
+                input(type="email" name="email" id="email" required)
+                    
+            p.form-field(style="display:none")
+                label(for="subject")
+                input(type="text" name="subject" id="subject")
+                    
+            p.form-field
+                label(for="comments") Comments
+                textarea(name="comments" id="comments" required)
+                    
+            p.form-field 
+                input(type="submit" name="submit" id="submit" value="Drop a line")

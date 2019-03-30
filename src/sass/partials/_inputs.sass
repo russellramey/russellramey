@@ -1,0 +1,39 @@
+form
+    input[type="text"],
+    input[type="email"],
+    textarea
+        padding: 1.5rem 0rem  .75rem 0rem !important
+        width: 100%
+        font-size: 1rem
+        min-height: 50px
+        border: 0
+        border-bottom: 2px solid #333
+        background: none !important
+        border-radius: 0
+        box-sizing: border-box
+        -webkit-box-sizing: border-box
+        -moz-box-sizing: border-box
+        -webkit-appearance: none !important
+        color: #fff
+
+        &:focus
+            outline: none
+
+    label
+        position: absolute
+        left: 0rem
+        line-height: 3.5rem
+        z-index: 1
+        top: 0
+        transition: all 100ms ease-in-out
+        -moz-transition: all 100ms ease-in-out
+        -webkit-transition: all 100ms ease-in-out
+        -o-transition: all 100ms ease-in-out
+        pointer-events: none
+        color: #666
+        font-size: 1rem
+
+        &.has-value
+            color: #666
+            font-size: .8rem
+            line-height: 2rem
