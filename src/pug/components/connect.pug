@@ -1,0 +1,32 @@
+#connect
+    .container.content-section
+        h2 Connect 
+        p Want to get in touch? I am currently taking on projects. Use the links below to drop me a line and I will get in contact with you as soon as I can.
+        
+        -
+            var profiles = [
+                {
+                    title: 'Linked In',
+                    slug: 'linkedin',
+                    icon: 'icon_social_linkedin.svg',
+                    link: 'https://www.linkedin.com/in/russell-ramey-8554586b'
+                },
+                {
+                    title: 'GitHub',
+                    slug: 'github',
+                    icon: 'icon_social_github.svg',
+                    link: 'https://github.com/russellramey'
+                },
+                {
+                    title: 'Email',
+                    slug: 'email',
+                    icon: 'icon_social_email.svg',
+                    link: 'mailto:russelljramey@gmail.com'
+                },
+            ]
+        -
+        ul.social 
+            each profile in profiles
+                li(class="" + profile.slug + "")
+                    a(href="" + profile.link + "" target="_blank" title="" + profile.title + " profile")
+                        img(src="images/" + profile.icon + "" width="auto" height="auto" alt="" + profile.title + "")
