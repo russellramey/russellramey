@@ -1,73 +1,74 @@
-.project-item
-	padding: 80px 40px 80px 40px
-	overflow: hidden
-	display: flex
-	position: relative
-	margin: 0
-	width: 100%
-
-	&:nth-child(2n+2)
-		flex-direction: row-reverse
-
-	// Details
-	.project-item-details
-		position: relative
-		display: flex
-		justify-content: center
-		flex-direction: column
-		padding: 0 25px
-		max-width: 480px
-		margin: 0 auto
-
-		.project-title
-			font-size: 24px
-
-		.project-stack
-			opacity: .4
-			display: none
-
-		.project-desc
-			font-size: 18px
-			line-height: 1.4em
-
-		.project-link
-			align-self: flex-start
-
-		.project-more
-			font-size: 12px
-			margin: 0 20px
-			text-transform: uppercase
-
-		span
-			display: none
-
-	// Features
-	.project-item-features
-		display: none
-
-	// Thumbnail
-	.project-item-thumbnail
-		width: 60%
-
-		img
-			padding: 0px 0 0 0
-			transition: all 200ms ease-in-out
-			-webkit-transition: all 200ms ease-in-out
-			-moz-transition: all 200ms ease-in-out
-			overflow: hidden
-			position: relative
-			max-width: 1440px
-			width: 100%
-			margin: 0 auto
-			bottom: 0
-			cursor: pointer
-
-			&:hover
-				bottom: 20px
-				transform: scale(1.010)
-
-
-// Responsiveness
-@media screen and (max-width:960px)
+#work
 	.project-item
-		display: block
+		padding: 80px 40px 80px 40px
+		overflow: hidden
+		display: flex
+		position: relative
+		margin: 0
+		width: 100%
+
+		&:nth-child(2n+2)
+			flex-direction: row-reverse
+
+		// Details
+		.project-item-details
+			position: relative
+			display: flex
+			justify-content: center
+			flex-direction: column
+			padding: 0 25px
+			max-width: 480px
+			margin: 0 auto
+
+			.project-title
+				font-size: 24px
+
+			.project-stack
+				opacity: .4
+				display: none
+
+			.project-desc
+				font-size: 18px
+				line-height: 1.4em
+
+			.project-link
+				align-self: flex-start
+
+			.project-more
+				font-size: 12px
+				margin: 0 20px
+				text-transform: uppercase
+
+			span
+				display: none
+
+		// Features
+		.project-item-features
+			display: none
+
+		// Thumbnail
+		.project-item-thumbnail
+			width: 60%
+
+			img
+				padding: 0px 0 0 0
+				transition: all 200ms ease-in-out
+				-webkit-transition: all 200ms ease-in-out
+				-moz-transition: all 200ms ease-in-out
+				overflow: hidden
+				position: relative
+				max-width: 1440px
+				width: 100%
+				margin: 0 auto
+				bottom: 0
+				cursor: pointer
+
+				&:hover
+					bottom: 20px
+					transform: scale(1.010)
+
+
+	// Responsiveness
+	@media screen and (max-width:960px)
+		.project-item
+			display: block

@@ -1,0 +1,44 @@
+#projects
+
+	.projects
+		display: flex
+		flex-wrap: wrap
+		clear: both
+		margin-top: 30px
+
+	.project-item
+		padding: 25px
+		background: #fff
+		border: 1px solid #eeeeee
+		overflow: hidden
+		margin-right: -1px
+		margin-bottom: -1px
+		position: relative
+		width: 50%
+		float: left
+		bottom: 0
+		display: flex
+		flex-direction: column
+		transition: all 100ms ease-in-out
+		-webkit-transition: all 100ms ease-in-out
+		-moz-transition: all 100ms ease-in-out
+		-o-transition: all 100ms ease-in-out
+		-ms-transition: all 100ms ease-in-out
+
+		&:hover
+			transform: scale(1.025)
+			z-index: 1
+			box-shadow: 0 0 10px rgba(0,0,0,.125)
+
+		h3
+			font-size: 1.25rem
+
+		p
+			font-size: 1.125rem
+			line-height: 1.5em
+
+	.button
+		margin: 30px auto
+		display: block
+		text-align: center
+		max-width: 200px
