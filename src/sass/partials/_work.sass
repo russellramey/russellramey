@@ -1,11 +1,14 @@
 #work
 	.project-item
-		padding: 80px 40px 80px 40px
+		padding: 7% 5% 7% 5%
 		overflow: hidden
 		display: flex
 		position: relative
 		margin: 0
 		width: 100%
+
+		&:first-child
+			padding-top:  0
 
 		&:nth-child(2n+2)
 			flex-direction: row-reverse
@@ -20,8 +23,16 @@
 			max-width: 480px
 			margin: 0 auto
 
+			@media screen and (max-width: 960px)
+				padding: 0
+				margin-left: 30%
+
+			@media screen and (max-width: 640px)
+				margin-left: 10%
+
 			.project-title
 				font-size: 24px
+				text-align: left
 
 			.project-stack
 				opacity: .4
@@ -49,23 +60,62 @@
 		// Thumbnail
 		.project-item-thumbnail
 			width: 60%
+			position: relative
+			bottom: 0
+			transition: all 200ms ease-in-out
+			padding-top: 37.5%
 
-			img
-				padding: 0px 0 0 0
-				transition: all 200ms ease-in-out
-				-webkit-transition: all 200ms ease-in-out
-				-moz-transition: all 200ms ease-in-out
-				overflow: hidden
-				position: relative
-				max-width: 1440px
+			@media screen and (max-width:960px)
 				width: 100%
-				margin: 0 auto
-				bottom: 0
+				padding-top: 63.5%
+
+			@media screen and (max-width: 640px)
+				margin-bottom: 30px
+
+			&:hover
+				transform: scale(1.025)
+				bottom: 20px
+
+			div
+				overflow: visible
+				position: absolute
 				cursor: pointer
 
-				&:hover
-					bottom: 20px
-					transform: scale(1.010)
+				img
+					box-shadow: 0 0 15px rgba(0,0,0,.125)
+					border-radius: 8px 8px 0 0
+
+				.screenshot
+					position: absolute
+					top: 0
+					left: 0
+					width: 100%
+					bottom: 0
+					background: white
+					background-position: top center !important
+					background-size: cover !important
+					background-repeat: no-repeat !important
+
+					&:hover
+						transition: background-position 5s ease-in-out
+						background-position: bottom center !important
+
+				&.thumbnail-mobile
+					max-width: 280px
+					width: 25%
+					left: 0
+					bottom: 0
+
+					.screenshot
+						top: 6%
+
+				&.thumbnail-desktop
+					top: 0
+					right: 0
+					margin-left: 10%
+
+					.screenshot
+						top: 5%
 
 
 	// Responsiveness

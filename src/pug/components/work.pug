@@ -3,7 +3,10 @@
         {
             title: "Marie & Russell",
             stack: "Bootstrap, JS, PHP, MySQL",
-            thumb: "work_marieandrussell.jpg",
+            thumb: { 
+                desktop: "marieandrussell-desktop.png",
+                mobile: "marieandrussell-mobile.png" 
+            },
             desc: {
                 main: "Couples wedding website primarily for general event and ceremony information and to accept rsvps and comments.",
                 more: "Post ceremony, this website also contains a stand alone gallery web app containing the full selection of photos taken during this wonderful occasion. The gallery can also be shared via a custom 'send to a friend' feature via email."
@@ -148,7 +151,15 @@
         each project in projects
             li.project-item
                 .project-item-thumbnail
-                    img(src="images/work/" + project.thumb + "" width="auto" height="auto")
+                    //-img(src="images/work/" + project.thumb + "" width="auto" height="auto")
+                    if project.thumb.desktop
+                        .thumbnail-desktop
+                            img(src="images/desktop-container.svg" width="auto" height="auto")
+                            span.screenshot(style="background-image:url(../images/work/" + project.thumb.desktop + ")")
+                    if project.thumb.mobile
+                        .thumbnail-mobile
+                            img(src="images/mobile-container.svg" width="auto" height="auto")
+                            span.screenshot(style="background-image:url(../images/work/" + project.thumb.mobile + ")")
                 .project-item-details
                     h3.project-title= project.title
                     p.project-stack= project.stack
