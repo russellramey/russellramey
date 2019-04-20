@@ -9,6 +9,48 @@ $(document).ready(function(){
         return false;
     });
 
+    // MODAL
+    $('.project-more').click(function(){
+        // Get variables and data
+        var project = $(this).closest('.project-item'),
+            project_thumb = project.find('.project-item-thumbnail').html(),
+            project_link = project.find('.button').attr('href'),
+            project_title = project.find('h3').text(),
+            project_tech = project.find('.project-stack').text(),
+            project_desc = project.find('.project-desc').text(),
+            project_feat = project.find('.project-item-features ul').html(),
+            project_close = $('#modal').find('.hamburger'),
+            project_details = '<div id="project" class="project-item"> \
+                                    <div class="project-item-details"> \
+                                        <h1 class="project-title">' + project_title + '</h1> \
+                                        <p class="project-stack">' + project_tech + '</p> \
+                                        <a href="' + project_link + '" class="button project-link" target="_blank">visit this site<span> &raquo;</span></a> \
+                                    </div> \
+                                    <div class="project-item-thumbnail">'+ project_thumb + '</div> \
+                                    <div class="project-item-features"> \
+                                        <p class="project-desc">' + project_desc + '</p><br> \
+                                        <h3>Features</h3> \
+                                        <ul>' + project_feat + '</ul> \
+                                    </div> \
+                                </div>';
+
+
+        // Open project deatils
+        $('#modal').append(project_details).delay(100).fadeIn(300);
+        $('body').addClass('no-scroll');
+
+        // Close details
+        $(project_close).click(function(){
+            $('#modal').fadeOut(300);
+            $('#project').remove();
+            $('body').removeClass('no-scroll');
+            return false;
+        });
+
+        // prevent default
+        return false;
+    });
+
     // SMOOTH SCROLLING
     $(function() {
       $('a[href*="#"]:not([href="#"])').click(function() {
