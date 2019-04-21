@@ -24,7 +24,10 @@
         {
             title: "House of Sticks",
             stack: "Wordpress, PHP, JS",
-            thumb: "work_houseofsticks.jpg",
+            thumb: { 
+                desktop: "marieandrussell-desktop.png",
+                mobile: "marieandrussell-mobile.png" 
+            },
             desc: {
                 main: "Full development for a interactive creative agency I have worked with in the past.",
                 more: "House of Sticks is involved in, but not limited to, video production, web design and development, mobile app development, photography, and much more. I have completed several projects for this agency, and have an on-going relationship with them."
@@ -40,7 +43,10 @@
         {
             title: "Orora Visual",
             stack: "Wordpress, PHP, JS",
-            thumb: "work_ororavisual.jpg",
+            thumb: { 
+                desktop: "marieandrussell-desktop.png",
+                mobile: "marieandrussell-mobile.png" 
+            },
             desc: {
                 main: "Provides visual communications solutions for their clients, including packaging, signage, and displays.",
                 more: "This site was developed with the idea of 'modularity' in mind. Custom wordpress plugins were created (WP Content Modules) in order to provide a varity of page layouts just using shortcodes. Clever background-image and gradient overlay CSS allowed for the colorful gradient effects that most of the 'hero' type background images posess."
@@ -57,7 +63,10 @@
         {
             title: "Forefront Experience",
             stack: "Wordpress, PHP, HTML, CSS, JS",
-            thumb: "work_forefrontexperience.jpg",
+            thumb: { 
+                desktop: "marieandrussell-desktop.png",
+                mobile: "marieandrussell-mobile.png" 
+            },
             desc: {
                 main: "New website development for a Christian ministry training organization that reaches all corners of the globe.",
                 more: "One of the biggest requirements for this site was ease of use for the site owner, this included a well thought out an organized backend/dashboard for content curation."
@@ -74,7 +83,10 @@
         {
             title: "Huselton, Morgan & Maultsby",
             stack: "Wordpress, PHP, JS",
-            thumb: "work_hmm.jpg",
+            thumb: { 
+                desktop: "marieandrussell-desktop.png",
+                mobile: "marieandrussell-mobile.png" 
+            },
             desc: {
                 main: "Design and development for a company focused on providing accounting services in the Southwest for over 35 years.",
                 more: "This website was a fairly large build out, considering I worked on both the design and development of this project. The client wanted several content types, all easily manageable via the Wordpress dashboard. These content types would then display differently based on what ever content type you were viewing at that time, or default settings if you were on a global page like the home page."
@@ -92,7 +104,10 @@
         {
             title: "Next Worldwide",
             stack: "Wordpress, PHP, JS, HTML, CSS",
-            thumb: "work_nextworldwide.jpg",
+            thumb: { 
+                desktop: "marieandrussell-desktop.png",
+                mobile: "marieandrussell-mobile.png" 
+            },
             desc: {
                 main: "Redesign for an organization that plans and organizes mission trips to various areas of the world.",
                 more: "A fun challenge on this project was to incorporate a system to handle the clients Mission Trip information. They wanted to be able to add trips based on Region and Demographic. I ended up creating a pretty complex filter & sorting function by using Wordpress categories and tags."
@@ -110,7 +125,10 @@
         {
             title: "Stickane",
             stack: "Wordpress, PHP, JS, HTML, CSS",
-            thumb: "work_stickane.jpg",
+            thumb: { 
+                desktop: "marieandrussell-desktop.png",
+                mobile: "marieandrussell-mobile.png" 
+            },
             desc: {
                 main: "Personal portfolio website for videographer and director to showcase their work.",
                 more: "The design idea for this site was for a very simple 'show reel', and focus on the work rather than page after page of information."
@@ -126,7 +144,10 @@
         {
             title: "Orpargo",
             stack: "Wordpress, PHP, JS, HTML, CSS",
-            thumb: "work_opargo.jpg",
+            thumb: { 
+                desktop: "marieandrussell-desktop.png",
+                mobile: "marieandrussell-mobile.png" 
+            },
             desc: {
                 main: "Design and development for an optimization engine to help health care professionals run their practice smoothly.",
                 more: "Simple and clean 'one pager' website. On this project I did the design and full development using Wordpress as the CMS. Even with a one page template - the client wanted the ability to blog and have more complex internal pages if needed."
@@ -150,16 +171,18 @@
     ul.projects
         each project in projects
             li.project-item
+                
                 .project-item-thumbnail
-                    //-img(src="images/work/" + project.thumb + "" width="auto" height="auto")
-                    if project.thumb.desktop
-                        .thumbnail-desktop
-                            img(src="images/desktop-container.svg" width="auto" height="auto")
-                            span.screenshot(style="background-image:url(../images/work/" + project.thumb.desktop + ")")
-                    if project.thumb.mobile
-                        .thumbnail-mobile
-                            img(src="images/mobile-container.svg" width="auto" height="auto")
-                            span.screenshot(style="background-image:url(../images/work/" + project.thumb.mobile + ")")
+                    a.project-more(href="redirect.php/?title=" + project.title + "&url=" + project.link + "" target="_blank")
+                        //-img(src="images/work/" + project.thumb + "" width="auto" height="auto")
+                        if project.thumb.desktop
+                            .thumbnail-desktop
+                                img(src="images/desktop-container.svg" width="auto" height="auto")
+                                span.screenshot(style="background-image:url(../images/work/" + project.thumb.desktop + ")")
+                        if project.thumb.mobile
+                            .thumbnail-mobile
+                                img(src="images/mobile-container.svg" width="auto" height="auto")
+                                span.screenshot(style="background-image:url(../images/work/" + project.thumb.mobile + ")")
                 .project-item-details
                     h3.project-title= project.title
                     p.project-stack= project.stack
