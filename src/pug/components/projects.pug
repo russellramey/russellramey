@@ -1,37 +1,4 @@
--
-    var projects = [
-        {
-            title: "Substrate",
-            desc: "Basic starter theme for the developer in mind. Use this theme as a basis to build your custom wordpress site upon.",
-            link: "#github",
-        },
-        {
-            title: "Quicktips",
-            desc: "Lightweight JS function to dynamically add tooltips to html elements. No dependencies required. Very simple way to add tooltip labels to your application.",
-            link: "#github",
-        },
-        {
-            title: "WP Content Modules",
-            desc: "Wordpress plugin that allows you to build pages modularly. Create simple, repeateable, blocks of content that can be used anywhere with the generated [module] shortcode.",
-            link: "#github",
-        },
-        {
-            title: "WP Public Previews",
-            desc: "Wordpress plugin to enable non logged in users to view posts or pages in draft status with a unqiue url and access token.",
-            link: "#github",
-        },
-        {
-            title: "Microsoft Graph OAuth",
-            desc: "Microsoft Graph OAuth example script using PHP using no dependencies or frameworks and saves auth response in a cookie.",
-            link: "#github",
-        },
-        {
-            title: "Simple Countdown",
-            desc: "Countdown timer with vanilla javascirpt requiring no dependencies.",
-            link: "#github",
-        },
-    ]
--
+include ../data/repos.pug
 
 #projects
     .container.content-section
@@ -39,10 +6,10 @@
         p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean lobortis, neque ac consectetur sodales, nisl diam efficitur nibh, eget cursus velit libero non mi. Pellentesque varius leo in ante volutpat lobortis. Donec erat mi, blandit quis mi ac, consectetur dictum massa. Sed ipsum velit, consequat non magna a, lacinia suscipit mauris.
         
         ul.projects
-            each project in projects
+            each repo in repos
                 li.project-item
-                    h3.project-title= project.title
-                    p.project-stack= project.desc
-                    a.project-more(href=project.link) Learn more
+                    h3.project-title= repo.title
+                    p.project-stack= repo.desc
+                    a.project-more(href=repo.link) Learn more
                     
         a.button(href="https://github.com/russellramey" title="View my Github Profile" target="_blank") View more on GitHub
