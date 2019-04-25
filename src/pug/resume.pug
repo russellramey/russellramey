@@ -4,7 +4,8 @@ block title
     title Full Stack Web Developer / Russell Ramey
 
 block content 
-        
+    include ./data/experience.pug
+    
     #resume
         #brand
             .container.content-section 
@@ -25,6 +26,15 @@ block content
         #work
             .container.content-section 
                 h2 Work Experience
+                ul.jobs
+                    each job in expierence
+                        li.job-item
+                            h3.job-title= job.title
+                            p.job-meta= job.company + ' / ' + job.time
+                            
+                            ul.job-features.bullets
+                                each feature in job.features
+                                    li= feature
         
         #skills 
             .container.content-section
