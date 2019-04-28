@@ -21,6 +21,7 @@ include ../data/projects.pug
                                 span.screenshot(style="background-image:url(../images/work/" + project.thumb.mobile + ")")
                 .project-item-details
                     h3.project-title= project.title
+                    p.project-client= project.client
                     p.project-stack= project.stack
                     p.project-desc= project.desc.main + ' '
                         span= project.desc.more
