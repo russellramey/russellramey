@@ -14,7 +14,7 @@ module.exports = grunt => {
           cwd: 'src/pug/',
           dest: 'dist',
           expand: true,
-          ext: '.html'
+          ext: '.php'
         }]
       }
     },
