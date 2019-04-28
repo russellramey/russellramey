@@ -36,7 +36,7 @@
 <body>
 
     <div id="wrapper">
-        <img src="/assets/img/rr_logo.svg" width="50" height="50"  />
+        <img src="../images/rr_logo.svg" width="50" height="50"  />
 
         <?php if($_GET['url'] == 'russellramey.me/assets/files/RussellRamey_Resume.pdf'){
             echo '<p>Your download will begin shortly...</p>';
