@@ -1,7 +1,4 @@
 $(document).ready(function(){
-    // FORMS
-    $('.sdl-form').simple_dynamic_labels();
-
     // NAV
     $('#hamburger').click(function(){
         $(this).toggleClass('open');
@@ -48,6 +45,69 @@ $(document).ready(function(){
         });
 
         // prevent default
+        return false;
+    });
+
+
+
+    // FORMS
+    $('.sdl-form').simple_dynamic_labels();
+    // Process form
+    $('#contactform').on('submit', function(e) {
+        var processURL = $(this).attr('action');
+        var string = $(this).serialize();
+        // Send AJAX request
+        $.ajax({
+            type: 'post',
+            url: processURL,
+            data: $(this).serialize(),
+            // Give user feedback
+            beforeSend: function(){
+                $('input[type="submit"]').addClass('disabled').val('Sending...');
+            },
+            // On success
+            success: function (data) {
+                //console.log('Submission was successful.');
+                $('#contactform').html(data);
+                $('input[type="submit"]').addClass('disabled').val('Drop a line');
+
+                // Vars
+                $bodyHeight = $('body').outerHeight();
+                $contactHeight = $('#contact').outerHeight();
+
+                // Add margin to body
+                $('body').css({'margin-bottom' : $contactHeight});
+                // Scroll to revel form
+                $("html, body").animate({
+                    scrollTop: $bodyHeight + $contactHeight
+                }, 1000);
+            },
+            // On error
+            error: function (data) {
+                //console.log('An error occurred.');
+                $('#form-results').html(data);
+            },
+        });
+
+        // Prevent default
+        return false;
+    });
+
+
+    // SHOW EMAIL FORM
+    $('li.email a').click(function(){
+        // Vars
+        var bodyHeight = $('body').outerHeight();
+        var contactHeight = $('#contact').outerHeight();
+
+        // Add margin to body
+        $('body').css({'margin-bottom' : contactHeight});
+        // Scroll to revel form
+        $("html, body").animate({
+            scrollTop: bodyHeight + contactHeight
+        }, 1000);
+
+        // Prevent default
         return false;
     });
 
