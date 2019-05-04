@@ -1,7 +1,7 @@
 include ../data/projects.pug
 
 #work
-    .container.content-section
+    .container
         h2 Featured work
         
     ul.projects
@@ -10,7 +10,6 @@ include ../data/projects.pug
                 
                 .project-item-thumbnail
                     a.project-more(href="redirect.php/?title=" + project.title + "&url=" + project.link + "" target="_blank")
-                        //-img(src="images/work/" + project.thumb + "" width="auto" height="auto")
                         if project.thumb.desktop
                             .thumbnail-desktop
                                 img(src="images/desktop-container.svg" width="auto" height="auto")
