@@ -93,24 +93,6 @@ $(document).ready(function(){
         return false;
     });
 
-
-    // SHOW EMAIL FORM
-    $('li.email a').click(function(){
-        // Vars
-        var bodyHeight = $('body').outerHeight();
-        var contactHeight = $('#contact').outerHeight();
-
-        // Add margin to body
-        $('body').css({'margin-bottom' : contactHeight});
-        // Scroll to revel form
-        $("html, body").animate({
-            scrollTop: bodyHeight + contactHeight
-        }, 1000);
-
-        // Prevent default
-        return false;
-    });
-
     // SMOOTH SCROLLING
     $(function() {
       $('a[href*="#"]:not([href="#"])').click(function() {
