@@ -27,6 +27,6 @@
         -
         ul.social 
             each profile in profiles
-                li(class="" + profile.slug + "")
-                    a(href="" + profile.link + "" target="_blank" title="" + profile.title + " profile")
+                li(class="" + profile.slug + "" data-qt="" + profile.title + "")
+                    a(href="" + profile.link + "" target="_blank" title="" + profile.title + "")
                         img(src="images/" + profile.icon + "" width="auto" height="auto" alt="" + profile.title + "")

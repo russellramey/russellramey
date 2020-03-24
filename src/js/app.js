@@ -16,12 +16,20 @@ $(document).ready(function(){
             project_tech = project.find('.project-stack').text(),
             project_desc = project.find('.project-desc').text(),
             project_feat = project.find('.project-item-features ul').html(),
-            project_close = $('#modal').find('.hamburger'),
-            project_details = '<div id="project" class="project-item"> \
+            project_close = $('#modal').find('.hamburger');
+
+        if(project_link){
+            project_link = '<a href="' + project_link + '" class="button project-link" target="_blank">visit this site<span> &raquo;</span></a>';
+        } else {
+            project_link = '';
+        }
+
+        // Modal content markup
+        var project_details = '<div id="project" class="project-item"> \
                                     <div class="project-item-details"> \
                                         <h1 class="project-title">' + project_title + '</h1> \
                                         <p class="project-stack">' + project_tech + '</p> \
-                                        <a href="' + project_link + '" class="button project-link" target="_blank">visit this site<span> &raquo;</span></a> \
+                                        ' + project_link + ' \
                                     </div> \
                                     <div class="project-item-thumbnail">'+ project_thumb + '</div> \
                                     <div class="project-item-features"> \

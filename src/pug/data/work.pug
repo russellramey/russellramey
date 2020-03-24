@@ -1,5 +1,52 @@
 -
-    var projects = [
+    var work = [
+        {
+            title: "TBarM.org",
+            client: "T Bar M / House of Sticks",
+            stack: "Wordpress, PHP, JS",
+            thumb: { 
+                desktop: "tbarm-desktop.jpg",
+                mobile: "tbarm-mobile.jpg" 
+            },
+            desc: {
+                main: "An organization that hosts camps and retreats all year long for all ages and families.",
+                more: "This website acts as the organizations main website with company info, promotions, as well as event calendars and agendas."
+            },
+            link: "www.tbarm.org",
+            features:[
+                "Fully responsive for accessibility of all content on any device.",
+                "Custom Wordpress theme, built with a specific use case tailored to the design of the site.",
+                "Utilizes a REST API to dynamically import event/camp information from the registration vendor.",
+                "REST API is used to get the availability and booking information from registration vendor.",
+                "Tailored PHP and Javascript functions process and format data from API to be utilized by Wordpress.",
+                "Modular backend to allow client to organize content and create reusable content easily.",
+                "Customizable content blocks allow creation of unique page layouts dynamically."
+            ]
+        },
+        {
+            title: "Customer On-boarding Portal",
+            client: "Caliber Home Loans / House of Sticks",
+            stack: "Laravel, Vue, Bootstrap",
+            thumb: { 
+                desktop: "caliber-desktop.jpg",
+                mobile: null 
+            },
+            desc: {
+                main: "Customer on-boarding portal for new customers of Caliber Home Loans, each customer has a unique url to view a personalized welcome video.",
+                more: "This application is 90% automation, with only the admin GUI interface serving as a way to make edits or add small batches of customers at a time. Customers are imported via a CSV that can be manually uploaded via the GUI, or uploaded to the clients SFTP server. This application processes the CSV, generates a unique id and url for each customer, then adds the customer details to the application database. The front end is a simple Vimeo video with personalized customer information displayed in HTML overlaid on the video. The main goal of this application was to streamline a vary manual process for the client."
+            },
+            link: null,
+            features:[
+                "Business automation application: reads, processes, and writes processed data with minimal human interaction.",
+                "Backend is Laravel, Front End is Vue and Bootstrap.",
+                "Reads and writes CSV files for easy upload/export.",
+                "Custom search with exportable search results.",
+                "CSV exports formatted in a way to be ingested by clients CRM tool to generate and send customer emails automatically.",
+                "Customer personal urls and information can be deleted automatically after desired expiration time, set within the application settings.",
+                "Uses the Vimeo player API to control the timecode and playback of the video on the front end.",
+                "Customer information is overlaid in HTML on top of the video player, thus allowing a single video source to be used."
+            ]
+        },
         {
             title: "Live At Magnolia",
             client: "Magnolia / House of Sticks",
@@ -19,7 +66,7 @@
                 "Customized content types to handle and maintain property information/data.",
                 "Utilizes a REST API to share property information with the corporate website.",
                 "Dynamic forms built into the theme and are pre-populated with property information.",
-                "Dynamic Google Maps API integration for property location and neighborhood information",
+                "Dynamic Google Maps API integration for property location and neighborhood information.",
                 "Custom Wordpress backend built into the theme to create an easy to use backend for the company to update and completely manage the site in house."
             ]
         },
@@ -48,7 +95,7 @@
         {
             title: "Sabre Air Merchandising",
             client: "Sabre Corporation",
-            stack: "HTML, CSS, JS, PHP, MySQL",
+            stack: "HTML, CSS, JS, PHP",
             thumb: { 
                 desktop: "sabreairmerchandising-desktop.jpg",
                 mobile: "sabreairmerchandising-mobile.jpg" 
@@ -70,7 +117,7 @@
         {
             title: "NAS Client",
             client: "House of Sticks",
-            stack: "Laravel, VueJS, Bootstrap",
+            stack: "Laravel, Vue, Bootstrap",
             thumb: { 
                 desktop: "hosnas-desktop.jpg",
                 mobile: "hosnas-mobile.jpg" 
@@ -79,36 +126,36 @@
                 main: "Web application for creative agency clients and vendors to access and share files stored on a network storage solution (NAS).",
                 more: "This application allows admins to create users, and assign projects to those users. Users can then login, view and contribute to project assets. Users have custom dashboards showing the projects they are assigned to."
             },
-            link: "login.houseofsticks.com",
+            link: null,
             features:[
                 "Fully responsive for accessibility and use on any device.",
                 "Custom backend using Laravel, frontend using PHP and VueJS.",
                 "Projects can have multiple users assigned for a Many-To-Many relationship.",
                 "Separate Admin and User models and authentication, allowing admins to control every aspect of the application, including granting permissions to users.",
-                "Admin dashboard allows admins to create, read, update, and delete (CRUD) all data contained in the application. Users are allowed to read, and update.",
+                "Admin dashboard allows admins to create, read, update, and delete (CRUD) all data contained in the application. Users are allowed to read, and update."
             ]
         },
-        {
-            title: "Marie & Russell",
-            client: "Personal",
-            stack: "Bootstrap, JS, PHP, MySQL",
-            thumb: { 
-                desktop: "marieandrussell-desktop.png",
-                mobile: "marieandrussell-mobile.png" 
-            },
-            desc: {
-                main: "Couples wedding website primarily for general event and ceremony information and to accept rsvps and comments.",
-                more: "Post ceremony, this website also contains a stand alone gallery web app containing the full selection of photos taken during this wonderful occasion. The gallery can also be shared via a custom 'send to a friend' feature via email."
-            },
-            link: "www.marieandrussell.com",
-            features:[
-                "Design and full development.",
-                "Fully responsive for both the ceremony website and gallery web app.",
-                "Custom image favoriting system with PHP, JS/Ajax, and MySQL.",
-                "Custom jQuery modal/lightbox filled with dynamic content from the DOM.",
-                "Interactive map, using Google Map API, showing important locations for the event with custom location icons.",
-                "Facebook, Twitter, and Email sharing."
-            ]
-        }
+        // {
+        //     title: "Marie & Russell",
+        //     client: "Personal",
+        //     stack: "Bootstrap, JS, PHP, MySQL",
+        //     thumb: { 
+        //         desktop: "marieandrussell-desktop.png",
+        //         mobile: "marieandrussell-mobile.png" 
+        //     },
+        //     desc: {
+        //         main: "Couples wedding website primarily for general event and ceremony information and to accept rsvps and comments.",
+        //         more: "Post ceremony, this website also contains a stand alone gallery web app containing the full selection of photos taken during this wonderful occasion. The gallery can also be shared via a custom 'send to a friend' feature via email."
+        //     },
+        //     link: "www.marieandrussell.com",
+        //     features:[
+        //         "Design and full development.",
+        //         "Fully responsive for both the ceremony website and gallery web app.",
+        //         "Custom image favoriting system with PHP, JS/Ajax, and MySQL.",
+        //         "Custom jQuery modal/lightbox filled with dynamic content from the DOM.",
+        //         "Interactive map, using Google Map API, showing important locations for the event with custom location icons.",
+        //         "Facebook, Twitter, and Email sharing."
+        //     ]
+        // }
     ]
 -
