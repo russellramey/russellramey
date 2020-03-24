@@ -20,16 +20,17 @@
     "babel-core": "^6.26.0",
     "babel-minify": "^0.5.0",
     "babel-preset-env": "^1.7.0",
-    "grunt": "^1.0.1",
+    "grunt": "^1.1.0",
     "grunt-babel": "^7.0.0",
     "grunt-browser-sync": "^2.2.0",
     "grunt-contrib-copy": "^1.0.0",
     "grunt-contrib-cssmin": "^2.2.1",
-    "grunt-contrib-imagemin": "^2.0.1",
+    "grunt-contrib-imagemin": "^3.1.0",
     "grunt-contrib-pug": "^1.0.0",
     "grunt-contrib-watch": "^1.0.0",
-    "grunt-sass": "^2.0.0",
-    "standard-version": "^4.2.0",
-    "rimraf": "^2.6.2"
+    "grunt-sass": "^3.1.0",
+    "node-sass": "^4.13.1",
+    "rimraf": "^2.6.2",
+    "standard-version": "^7.1.0"
   }
 }

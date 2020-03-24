@@ -1,3 +1,4 @@
+const sass = require('node-sass');
 module.exports = grunt => {
   grunt.initConfig({
     // pug task
@@ -23,6 +24,7 @@ module.exports = grunt => {
     sass: {
       dist: {
         options: {
+          implementation: sass,
           style: 'inline'
         },
         files: [{
@@ -145,9 +147,9 @@ module.exports = grunt => {
   //register default task
   if(process.env.NODE_ENV == 'production')
   {
-    grunt.registerTask('default', ['pug', 'sass', 'copy', 'imagemin', 'cssmin', 'babel'])
+    grunt.registerTask('default', ['pug', 'sass', 'copy', 'imagemin', 'cssmin', 'babel']);
   }else
   {
-    grunt.registerTask('default', ['pug', 'sass', 'copy', 'imagemin', 'browserSync', 'babel', 'watch'])
+    grunt.registerTask('default', ['pug', 'sass', 'copy', 'imagemin', 'browserSync', 'babel', 'watch']);
   }
 };
