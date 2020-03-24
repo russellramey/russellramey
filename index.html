@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="utf-8">
     <meta name="google-site-verification" content="ClWn4VufbSpnMgUy1edlfRLFqRXyJFKvECzf5u0B3nQ">
-    <meta name="description" content="Web developer and front-end designer working mainly in HTML, CSS, JavaScript, PHP, and MySQL.">
-    <meta name="keywords" content="HTML, CSS, JavaScript, jQuery, PHP, Wordpress, Bootstrap, HTML5, CSS3, Linux, LAMP, Website, Web Dev, Web developer, Web development, Graphic design, Web design, UX, Interactive, Interactive design, Interactive development, App, App development, Web app, Web applications, Web, Internet, World Wide Web, www">
+    <meta name="description" content="Full stack developer working mainly in HTML, CSS, JavaScript, PHP, and MySQL.">
+    <meta name="keywords" content="HTML, CSS, JavaScript, jQuery, PHP, Wordpress, Bootstrap, HTML5, CSS3, Linux, LAMP, Website, Web Dev, Web developer, Web development, Graphic design, Web design, UX, Interactive, Interactive design, Interactive development, App, App development, Application development, SaaS, Web app, Web applications, Web, Internet, World Wide Web, www">
     <meta name="author" content="Russell Ramey">
     <meta name="shortcut icon" href="/favicon.ico">
     <title>Full Stack Web Developer / Russell Ramey</title>
@@ -38,7 +38,7 @@
         <div class="container content-section">
           <h2>About me</h2>
           <p>Based out of the Dallas/Fort Worth metroplex, I am a full stack developer working primarily in HTML, CSS, JavaScript, PHP, and MySQL. I have been working as a developer for ten years with projects ranging from simple static one page landing pages, complete Wordpress custom theme & plugin development, to fully custom CRUD applications. I am currently working as a Principal Web Developer for Sabre, an innovative technology company that provides B2B software solutions for its customers in the travel industry.</p>
-          <p><a class="button" href="/resume.html" target="_blank">Read more</a></p>
+          <p><a class="button" href="/resume.html" target="_blank">View resume</a></p>
         </div>
       </div>
       <div id="work">
@@ -46,6 +46,54 @@
           <h2>Featured work</h2>
         </div>
         <ul class="projects">
+          <li class="project-item">
+            <div class="project-item-thumbnail"><a class="project-more" href="redirect.php/?title=TBarM.org&amp;url=www.tbarm.org" target="_blank">
+                <div class="thumbnail-desktop"><img src="images/desktop-container.svg" width="auto" height="auto"><span class="screenshot" style="background-image:url(../images/work/tbarm-desktop.jpg)"></span></div>
+                <div class="thumbnail-mobile"><img src="images/mobile-container.svg" width="auto" height="auto"><span class="screenshot" style="background-image:url(../images/work/tbarm-mobile.jpg)"></span></div></a></div>
+            <div class="project-item-details">
+              <h3 class="project-title">TBarM.org</h3>
+              <p class="project-client">T Bar M / House of Sticks</p>
+              <p class="project-stack">Wordpress, PHP, JS</p>
+              <p class="project-desc">An organization that hosts camps and retreats all year long for all ages and families. <span>This website acts as the organizations main website with company info, promotions, as well as event calendars and agendas.</span></p>
+              <p>   <a class="project-link button" href="redirect.html?title=TBarM.org&amp;url=www.tbarm.org" target="_blank">View this site &raquo;</a><a class="project-more" href="#">View details</a>
+              </p>
+            </div>
+            <div class="project-item-features">
+              <ul>
+                <li>Fully responsive for accessibility of all content on any device.</li>
+                <li>Custom Wordpress theme, built with a specific use case tailored to the design of the site.</li>
+                <li>Utilizes a REST API to dynamically import event/camp information from the registration vendor.</li>
+                <li>REST API is used to get the availability and booking information from registration vendor.</li>
+                <li>Tailored PHP and Javascript functions process and format data from API to be utilized by Wordpress.</li>
+                <li>Modular backend to allow client to organize content and create reusable content easily.</li>
+                <li>Customizable content blocks allow creation of unique page layouts dynamically.</li>
+              </ul>
+            </div>
+          </li>
+          <li class="project-item">
+            <div class="project-item-thumbnail"><a class="project-more" href="redirect.php/?title=Customer On-boarding Portal&amp;url=null" target="_blank">
+                <div class="thumbnail-desktop"><img src="images/desktop-container.svg" width="auto" height="auto"><span class="screenshot" style="background-image:url(../images/work/caliber-desktop.jpg)"></span></div></a></div>
+            <div class="project-item-details">
+              <h3 class="project-title">Customer On-boarding Portal</h3>
+              <p class="project-client">Caliber Home Loans / House of Sticks</p>
+              <p class="project-stack">Laravel, Vue, Bootstrap</p>
+              <p class="project-desc">Customer on-boarding portal for new customers of Caliber Home Loans, each customer has a unique url to view a personalized welcome video. <span>This application is 90% automation, with only the admin GUI interface serving as a way to make edits or add small batches of customers at a time. Customers are imported via a CSV that can be manually uploaded via the GUI, or uploaded to the clients SFTP server. This application processes the CSV, generates a unique id and url for each customer, then adds the customer details to the application database. The front end is a simple Vimeo video with personalized customer information displayed in HTML overlaid on the video. The main goal of this application was to streamline a vary manual process for the client.</span></p>
+              <p>   <a class="project-more" href="#">View details</a>
+              </p>
+            </div>
+            <div class="project-item-features">
+              <ul>
+                <li>Business automation application: reads, processes, and writes processed data with minimal human interaction.</li>
+                <li>Backend is Laravel, Front End is Vue and Bootstrap.</li>
+                <li>Reads and writes CSV files for easy upload/export.</li>
+                <li>Custom search with exportable search results.</li>
+                <li>CSV exports formatted in a way to be ingested by clients CRM tool to generate and send customer emails automatically.</li>
+                <li>Customer personal urls and information can be deleted automatically after desired expiration time, set within the application settings.</li>
+                <li>Uses the Vimeo player API to control the timecode and playback of the video on the front end.</li>
+                <li>Customer information is overlaid in HTML on top of the video player, thus allowing a single video source to be used.</li>
+              </ul>
+            </div>
+          </li>
           <li class="project-item">
             <div class="project-item-thumbnail"><a class="project-more" href="redirect.php/?title=Live At Magnolia&amp;url=www.liveatmagnolia.com" target="_blank">
                 <div class="thumbnail-desktop"><img src="images/desktop-container.svg" width="auto" height="auto"><span class="screenshot" style="background-image:url(../images/work/liveatmagnolia-desktop.jpg)"></span></div>
@@ -55,7 +103,8 @@
               <p class="project-client">Magnolia / House of Sticks</p>
               <p class="project-stack">Wordpress, PHP, JS</p>
               <p class="project-desc">Property management marketing website for prospective residents to browse properties, amenities, and general information. <span>This website was developed to be used as the main marketing tool for this property management company. All the properties the company manages are listed and maintained via a highly customized Wordpress backend.</span></p>
-              <p>   <a class="project-link button" href="redirect.html?title=Live At Magnolia&amp;url=www.liveatmagnolia.com" target="_blank">View this site &raquo;</a><a class="project-more" href="#">View details</a></p>
+              <p>   <a class="project-link button" href="redirect.html?title=Live At Magnolia&amp;url=www.liveatmagnolia.com" target="_blank">View this site &raquo;</a><a class="project-more" href="#">View details</a>
+              </p>
             </div>
             <div class="project-item-features">
               <ul>
@@ -64,7 +113,7 @@
                 <li>Customized content types to handle and maintain property information/data.</li>
                 <li>Utilizes a REST API to share property information with the corporate website.</li>
                 <li>Dynamic forms built into the theme and are pre-populated with property information.</li>
-                <li>Dynamic Google Maps API integration for property location and neighborhood information</li>
+                <li>Dynamic Google Maps API integration for property location and neighborhood information.</li>
                 <li>Custom Wordpress backend built into the theme to create an easy to use backend for the company to update and completely manage the site in house.</li>
               </ul>
             </div>
@@ -78,7 +127,8 @@
               <p class="project-client">Magnolia / House of Sticks</p>
               <p class="project-stack">Wordpress, PHP, JS</p>
               <p class="project-desc">Property management company website for corporate and business related information. <span>This website was developed alongside their customer facing LiveAtMagnolia.com to provide corporate and business related information about Magnolia Property Company.</span></p>
-              <p>   <a class="project-link button" href="redirect.html?title=Magnolia Property Company&amp;url=www.magnoliapropcompany.com" target="_blank">View this site &raquo;</a><a class="project-more" href="#">View details</a></p>
+              <p>   <a class="project-link button" href="redirect.html?title=Magnolia Property Company&amp;url=www.magnoliapropcompany.com" target="_blank">View this site &raquo;</a><a class="project-more" href="#">View details</a>
+              </p>
             </div>
             <div class="project-item-features">
               <ul>
@@ -98,9 +148,10 @@
             <div class="project-item-details">
               <h3 class="project-title">Sabre Air Merchandising</h3>
               <p class="project-client">Sabre Corporation</p>
-              <p class="project-stack">HTML, CSS, JS, PHP, MySQL</p>
+              <p class="project-stack">HTML, CSS, JS, PHP</p>
               <p class="project-desc">Web application showcasing available ancillaries for airline carriers within the Sabre marketplace. <span>This application allows a travel agent to quickly search and filter thru the available airline ancillaries offered in Sabre products, a very useful travel agent tool.</span></p>
-              <p>   <a class="project-link button" href="redirect.html?title=Sabre Air Merchandising&amp;url=www.sabretravelnetwork.com/airmerchandising" target="_blank">View this site &raquo;</a><a class="project-more" href="#">View details</a></p>
+              <p>   <a class="project-link button" href="redirect.html?title=Sabre Air Merchandising&amp;url=www.sabretravelnetwork.com/airmerchandising" target="_blank">View this site &raquo;</a><a class="project-more" href="#">View details</a>
+              </p>
             </div>
             <div class="project-item-features">
               <ul>
@@ -114,15 +165,16 @@
             </div>
           </li>
           <li class="project-item">
-            <div class="project-item-thumbnail"><a class="project-more" href="redirect.php/?title=NAS Client&amp;url=login.houseofsticks.com" target="_blank">
+            <div class="project-item-thumbnail"><a class="project-more" href="redirect.php/?title=NAS Client&amp;url=null" target="_blank">
                 <div class="thumbnail-desktop"><img src="images/desktop-container.svg" width="auto" height="auto"><span class="screenshot" style="background-image:url(../images/work/hosnas-desktop.jpg)"></span></div>
                 <div class="thumbnail-mobile"><img src="images/mobile-container.svg" width="auto" height="auto"><span class="screenshot" style="background-image:url(../images/work/hosnas-mobile.jpg)"></span></div></a></div>
             <div class="project-item-details">
               <h3 class="project-title">NAS Client</h3>
               <p class="project-client">House of Sticks</p>
-              <p class="project-stack">Laravel, VueJS, Bootstrap</p>
+              <p class="project-stack">Laravel, Vue, Bootstrap</p>
               <p class="project-desc">Web application for creative agency clients and vendors to access and share files stored on a network storage solution (NAS). <span>This application allows admins to create users, and assign projects to those users. Users can then login, view and contribute to project assets. Users have custom dashboards showing the projects they are assigned to.</span></p>
-              <p>   <a class="project-link button" href="redirect.html?title=NAS Client&amp;url=login.houseofsticks.com" target="_blank">View this site &raquo;</a><a class="project-more" href="#">View details</a></p>
+              <p>   <a class="project-more" href="#">View details</a>
+              </p>
             </div>
             <div class="project-item-features">
               <ul>
@@ -131,28 +183,6 @@
                 <li>Projects can have multiple users assigned for a Many-To-Many relationship.</li>
                 <li>Separate Admin and User models and authentication, allowing admins to control every aspect of the application, including granting permissions to users.</li>
                 <li>Admin dashboard allows admins to create, read, update, and delete (CRUD) all data contained in the application. Users are allowed to read, and update.</li>
-              </ul>
-            </div>
-          </li>
-          <li class="project-item">
-            <div class="project-item-thumbnail"><a class="project-more" href="redirect.php/?title=Marie &amp; Russell&amp;url=www.marieandrussell.com" target="_blank">
-                <div class="thumbnail-desktop"><img src="images/desktop-container.svg" width="auto" height="auto"><span class="screenshot" style="background-image:url(../images/work/marieandrussell-desktop.png)"></span></div>
-                <div class="thumbnail-mobile"><img src="images/mobile-container.svg" width="auto" height="auto"><span class="screenshot" style="background-image:url(../images/work/marieandrussell-mobile.png)"></span></div></a></div>
-            <div class="project-item-details">
-              <h3 class="project-title">Marie &amp; Russell</h3>
-              <p class="project-client">Personal</p>
-              <p class="project-stack">Bootstrap, JS, PHP, MySQL</p>
-              <p class="project-desc">Couples wedding website primarily for general event and ceremony information and to accept rsvps and comments. <span>Post ceremony, this website also contains a stand alone gallery web app containing the full selection of photos taken during this wonderful occasion. The gallery can also be shared via a custom 'send to a friend' feature via email.</span></p>
-              <p>   <a class="project-link button" href="redirect.html?title=Marie &amp; Russell&amp;url=www.marieandrussell.com" target="_blank">View this site &raquo;</a><a class="project-more" href="#">View details</a></p>
-            </div>
-            <div class="project-item-features">
-              <ul>
-                <li>Design and full development.</li>
-                <li>Fully responsive for both the ceremony website and gallery web app.</li>
-                <li>Custom image favoriting system with PHP, JS/Ajax, and MySQL.</li>
-                <li>Custom jQuery modal/lightbox filled with dynamic content from the DOM.</li>
-                <li>Interactive map, using Google Map API, showing important locations for the event with custom location icons.</li>
-                <li>Facebook, Twitter, and Email sharing.</li>
               </ul>
             </div>
           </li>
@@ -215,9 +245,9 @@
           <h2>Connect </h2>
           <p>Want to get in touch? I am currently taking on projects. Use the links below to drop me a line and I will get in contact with you as soon as I can.</p>
           <ul class="social"> 
-            <li class="linkedin"><a href="https://www.linkedin.com/in/russell-ramey-8554586b" target="_blank" title="Linked In profile"><img src="images/icon_social_linkedin.svg" width="auto" height="auto" alt="Linked In"></a></li>
-            <li class="github"><a href="https://github.com/russellramey" target="_blank" title="GitHub profile"><img src="images/icon_social_github.svg" width="auto" height="auto" alt="GitHub"></a></li>
-            <li class="email"><a href="mailto:russelljramey@gmail.com" target="_blank" title="Email profile"><img src="images/icon_social_email.svg" width="auto" height="auto" alt="Email"></a></li>
+            <li class="linkedin" data-qt="Linked In"><a href="https://www.linkedin.com/in/russell-ramey-8554586b" target="_blank" title="Linked In"><img src="images/icon_social_linkedin.svg" width="auto" height="auto" alt="Linked In"></a></li>
+            <li class="github" data-qt="GitHub"><a href="https://github.com/russellramey" target="_blank" title="GitHub"><img src="images/icon_social_github.svg" width="auto" height="auto" alt="GitHub"></a></li>
+            <li class="email" data-qt="Email"><a href="mailto:russelljramey@gmail.com" target="_blank" title="Email"><img src="images/icon_social_email.svg" width="auto" height="auto" alt="Email"></a></li>
           </ul>
         </div>
       </div>
