@@ -22,16 +22,18 @@ block content
         #about
             .container.content-section 
                 h2 Introduction
-                p Based out of the Dallas/Fort Worth metroplex, I am a full stack developer working primarily in HTML, CSS, JavaScript, PHP, and MySQL. I have been working as a developer for ten years with projects ranging from simple static one page landing pages, complete Wordpress custom theme & plugin development, to fully custom CRUD applications. I am currently working as a Principal Web Developer for Sabre, an innovative technology company that provides B2B software solutions for its customers in the travel industry.
+                p Based out of the Dallas/Fort Worth metroplex in Texas, I am a full stack developer working primarily in HTML, CSS, JavaScript, PHP, and MySQL. I have been working as a developer for ten years with projects ranging from simple static one page landing pages, complete Wordpress custom theme &amp; plugin development, to fully custom CRUD applications. When problem solving new challenges, I stick to a few core concepts - abstraction, reusability, and simplification. I am currently working as a Principal Web Developer for Sabre, an innovative technology company that provides B2B software solutions for its customers in the travel industry.
 
         #work
             .container.content-section 
-                h2 Work Experience
+                h2 Professional Experience
                 ul.jobs
                     each job in expierence
                         li.job-item
+                            span.job-type= job.type
                             h3.job-title= job.title
                             p.job-meta= job.company + ' / ' + job.time
+                            p.job-desc= job.description
                             
                             ul.job-features.bullets
                                 each feature in job.features
@@ -40,7 +42,7 @@ block content
         #skills 
             .container.content-section
                 h2 Technologies
-                p Below are some of the most popular - and essential - web technologies I utilize to create the websites & apps that I build. I have adopted these as my “go to” technologies for building things on the web. I am fluent and proficient in all the languages, frameworks, version control, and software listed below.
+                p Below are some of the most popular - and essential - web technologies I utilize to create the websites &amp; apps that I build. I have adopted these as my “go to” technologies for building many things on the web. Being fluent and proficient in all the languages, frameworks, build tools, version control, and software listed below allows me to work efficiently and effectively.
                 
                 .column-list
                     ul.bullets
