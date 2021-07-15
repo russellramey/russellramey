@@ -420,7 +420,7 @@ form label {
     #work .project-item .project-item-details .project-client {
       font-size: .95rem;
       text-transform: uppercase;
-      color: #999;
+      color: #8b949e;
       margin-top: -8px;
       margin-bottom: 10px; }
     #work .project-item .project-item-details .project-stack {
@@ -733,8 +733,8 @@ form label {
   #resume .job-item .job-type {
     font-size: 11px;
     text-transform: uppercase;
-    color: #e5e5e5;
-    background: #555;
+    color: #8b949e;
+    background: #161b22;
     padding: 5px 10px;
     border-radius: 10px;
     display: inline-block;
@@ -750,5 +750,5 @@ form label {
     margin-top: -5px;
     margin-bottom: 10px;
     font-size: 14px;
-    color: #999;
+    color: #8b949e;
     text-transform: uppercase; }
