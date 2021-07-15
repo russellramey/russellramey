@@ -57,50 +57,6 @@ $(document).ready(function(){
     });
 
 
-
-    // FORMS
-    $('.sdl-form').simple_dynamic_labels();
-    // Process form
-    $('#contactform').on('submit', function(e) {
-        var processURL = $(this).attr('action');
-        var string = $(this).serialize();
-        // Send AJAX request
-        $.ajax({
-            type: 'post',
-            url: processURL,
-            data: $(this).serialize(),
-            // Give user feedback
-            beforeSend: function(){
-                $('input[type="submit"]').addClass('disabled').val('Sending...');
-            },
-            // On success
-            success: function (data) {
-                //console.log('Submission was successful.');
-                $('#contactform').html(data);
-                $('input[type="submit"]').addClass('disabled').val('Drop a line');
-
-                // Vars
-                $bodyHeight = $('body').outerHeight();
-                $contactHeight = $('#contact').outerHeight();
-
-                // Add margin to body
-                $('body').css({'margin-bottom' : $contactHeight});
-                // Scroll to revel form
-                $("html, body").animate({
-                    scrollTop: $bodyHeight + $contactHeight
-                }, 1000);
-            },
-            // On error
-            error: function (data) {
-                //console.log('An error occurred.');
-                $('#form-results').html(data);
-            },
-        });
-
-        // Prevent default
-        return false;
-    });
-
     // SMOOTH SCROLLING
     $(function() {
       $('a[href*="#"]:not([href="#"])').click(function() {
@@ -123,45 +79,6 @@ $(document).ready(function(){
       });
     });
 });
-
-// Simple Dynamic Labels
-$.fn.simple_dynamic_labels = function (){
-
-    // Find inputs
-    var inputs = $(this).find('input, textarea, select');
-
-    // Find labels
-    var labels = $(this).find('label.sdl-label');
-        $(labels).parent().css('position', 'relative');
-
-    // Set active class
-    var active = "has-value";
-
-    // For each input
-    $(inputs).each(function(){
-        // On focus
-        $(this).focus(function() {
-            if(!$(this).val()) {
-                $(this).parent().find(labels).addClass(active);
-            }
-        });
-
-        // On blur
-        $(this).blur(function() {
-            if($(this).val() ) {
-                $(this).parent().find(labels).addClass(active);
-            } else {
-                $(this).parent().find(labels).removeClass(active);
-            }
-        });
-
-        // Has value
-        if($(this).val() ) {
-            $(this).parent().find(labels).addClass(active);
-        }
-    });
-};
-
 
 // Tooltips
 var tooltips = document.querySelectorAll("[data-qt]");
@@ -205,7 +122,7 @@ if (tooltips.length > 0){
 
     // Add css to document
     var style = document.createElement('style');
-    var css = "[data-qt]{position:relative}.qt-tooltip,.qt-tooltip:before{position:absolute;background:#222}.qt-tooltip{display:block;line-height:1;margin-top:10px;top:100%;left:-9999px;padding:10px;pointer-events:none;color:#fff;text-decoration:none;white-space:nowrap;font-size:.75rem;opacity:0;z-index:1;border-radius:4px;-webkit-transition:opacity 150ms ease-in-out;transition:opacity 150ms ease-in-out}.qt-tooltip:before{content:'';display:block;top:-3px;left:50%;margin-left:-5px;width:10px;height:10px;transform:rotate(45deg)}";
+    var css = "[data-qt]{position:relative}.qt-tooltip,.qt-tooltip:before{position:absolute;background:#8b949e}.qt-tooltip{display:block;line-height:1;margin-top:10px;top:100%;left:-9999px;padding:10px;pointer-events:none;color:#fff;text-decoration:none;white-space:nowrap;font-size:.75rem;opacity:0;z-index:1;border-radius:4px;-webkit-transition:opacity 150ms ease-in-out;transition:opacity 150ms ease-in-out}.qt-tooltip:before{content:'';display:block;top:-3px;left:50%;margin-left:-5px;width:10px;height:10px;transform:rotate(45deg)}";
     style.innerHTML = css;
     document.head.appendChild(style);
 }

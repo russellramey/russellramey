@@ -4,14 +4,14 @@
 	 viewBox="0 0 240 140" style="enable-background:new 0 0 240 140;" xml:space="preserve">
 <style type="text/css">
 	.st0{display:none;}
-	.st1{display:inline;fill:#333333;}
-	.st2{display:inline;fill:#EBEBEB;}
+	.st1{display:inline;fill:#eeeeee;}
+	.st2{display:inline;fill:#0d1117;}
 	.st3{display:inline;fill:#FFFFFF;}
-	.st4{fill:#333333;}
-	.st5{fill:#FFFFFF;}
-	.st6{fill:#DDDDDD;}
-	.st7{fill:#EBEBEB;}
-	.st8{fill:#EBEBEB;enable-background:new    ;}
+	.st4{fill:#eeeeee;}
+	.st5{fill:#0d1117;}
+	.st6{fill:#0d1117;}
+	.st7{fill:#0d1117;}
+	.st8{fill:#0d1117;enable-background:new    ;}
 </style>
 <g class="st0">
 	<polygon class="st1" points="97,103 91.8,44.4 149.2,44.4 144,103 120.5,109.5 	"/>

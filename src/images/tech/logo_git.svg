@@ -5,9 +5,9 @@
 <style type="text/css">
 	.st0{display:none;}
 	.st1{display:inline;}
-	.st2{fill:#333333;}
-	.st3{display:inline;fill:#333333;}
-	.st4{display:inline;fill-rule:evenodd;clip-rule:evenodd;fill:#333333;}
+	.st2{fill:#eeeeee;}
+	.st3{display:inline;fill:#eeeeee;}
+	.st4{display:inline;fill-rule:evenodd;clip-rule:evenodd;fill:#eeeeee;}
 </style>
 <g class="st0">
 	<g id="test-tube_1_" class="st1">
@@ -24,7 +24,7 @@
 			c-0.2-0.4,0-0.8,0.4-0.9c0.4-0.2,0.8,0,0.9,0.4C166.4,79.9,166.3,80.3,165.9,80.5z M166.6,77.9c-0.3-0.7,0-1.5,0.7-1.8
 			c0.7-0.3,1.5,0,1.8,0.7c0.3,0.7,0,1.5-0.7,1.8C167.6,78.9,166.9,78.6,166.6,77.9z M168.3,84.7c0.2-0.1,0.5,0,0.6,0.2
 			c0.1,0.2,0,0.5-0.2,0.6s-0.5,0-0.6-0.2C167.9,85.1,168,84.8,168.3,84.7z"/>
-		
+
 			<ellipse id="top_1_" transform="matrix(0.359 -0.9333 0.9333 0.359 74.3163 198.1327)" class="st2" cx="181.4" cy="45" rx="1.2" ry="4.6"/>
 	</g>
 	<path id="jekyll-text" class="st3" d="M81.3,66.7c0.7,0.6,2,0.2,2.9-0.7c0.9-1,1.1-2.3,0.3-2.9c-0.7-0.6-2-0.2-2.9,0.8
