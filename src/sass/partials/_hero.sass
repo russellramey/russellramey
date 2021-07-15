@@ -1,12 +1,13 @@
 #hero
 	text-align: center
 	position: relative
-	background: #fff url('../images/hero-bkg.jpg') center center no-repeat fixed
+	//background: #fff url('../images/hero-bkg.jpg') center center no-repeat fixed
 	background-size: cover
 	-moz-background-size: cover
 	-webkit-background-size: cover
 	-o-background-size: cover
 	height: 100vh
+	border-bottom: 1px solid #161b22
 
 	.content
 		position: absolute
@@ -17,16 +18,19 @@
 
 		p
 			font-size: 21px
-			margin-bottom: -5px
+			margin-bottom: 0
 
 	.logo
-		width: 50px
+		width: 70px
 		margin: 0 auto
 		text-align: center
 		padding: 30px 0
 		position: absolute
 		left: 50%
-		margin-left: -25px
+		margin-left: -35px
+		margin-top: -8px
+		img
+			width: 100%
 
 // Responsiveness
 @media screen and (max-width: 640px)
