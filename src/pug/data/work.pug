@@ -2,7 +2,7 @@
     var work = [
         {
             title: "TBarM.org",
-            client: "T Bar M / House of Sticks",
+            client: "T Bar M",
             stack: "Wordpress, PHP, JS",
             thumb: { 
                 desktop: "tbarm-desktop.jpg",
@@ -25,15 +25,15 @@
         },
         {
             title: "Customer On-boarding Portal",
-            client: "Caliber Home Loans / House of Sticks",
+            client: "Caliber Home Loans",
             stack: "Laravel, Vue, Bootstrap",
             thumb: { 
                 desktop: "caliber-desktop.jpg",
                 mobile: "caliber-mobile.jpg" 
             },
             desc: {
-                main: "Customer on-boarding portal for new customers of Caliber Home Loans, each customer has a unique url to view a personalized welcome video.",
-                more: "This application is 90% automation, with only the admin GUI interface serving as a way to make edits or add small batches of customers at a time. Customers are imported via a CSV that can be manually uploaded via the GUI, or uploaded to the clients SFTP server. This application processes the CSV, generates a unique id and url for each customer, then adds the customer details to the application database. The front end is a simple Vimeo video with personalized customer information displayed in HTML overlaid on the video. The main goal of this application was to streamline a vary manual process for the client."
+                main: "In-house customer on-boarding portal for new customers of Caliber Home Loans. This applicatoin provides each customer a unique url to view a personalized video.",
+                more: "In addition, this application is 90% automation, with only the admin GUI interface serving as a way to make edits or add small batches of customers at a single time. Customers and customer profiles are imported via a CSV that can be manually uploaded via the GUI, or uploaded to the clients SFTP server. This application processes the CSV, generates a unique id and url for each customer, then adds the customer details to the application database. The front end is a simple landing page with a Vimeo video and personalized customer information displayed in HTML overlaid over the video. The main goal of this application was to streamline a vary manual process for the client."
             },
             link: null,
             features:[
@@ -49,7 +49,7 @@
         },
         {
             title: "Live At Magnolia",
-            client: "Magnolia / House of Sticks",
+            client: "Magnolia",
             stack: "Wordpress, PHP, JS",
             thumb: { 
                 desktop: "liveatmagnolia-desktop.jpg",
@@ -68,6 +68,27 @@
                 "Dynamic forms built into the theme and are pre-populated with property information.",
                 "Dynamic Google Maps API integration for property location and neighborhood information.",
                 "Custom Wordpress backend built into the theme to create an easy to use backend for the company to update and completely manage the site in house."
+            ]
+        },
+        {
+            title: "Magnolia Property Company",
+            client: "Magnolia",
+            stack: "Wordpress, PHP, JS",
+            thumb: { 
+                desktop: "magnoliapropcompany-desktop.jpg",
+                mobile: "magnoliapropcompany-mobile.jpg" 
+            },
+            desc: {
+                main: "Property management company website for corporate and business related information.",
+                more: "This website was developed alongside their customer facing LiveAtMagnolia.com to provide corporate and business related information about Magnolia Property Company."
+            },
+            link: "www.magnoliapropertycompany.com/",
+            features:[
+                "Fully responsive for accessibility and use on any device.",
+                "Consumes a RESTful API from LiveAtMagnolia.com for all of the property information, allowing all data to be controlled in one place and preventing having to double publish the same information.",
+                "RESTful API data is enabled via a custom plugin, allowing all data requested to be managed from within this site.",
+                "Custom Wordpress backend built into the theme to create an easy to use backend for the company to update and completely manage the site in house.",
+                "Javascript basic algorithms to calculate various statistics about total and individual property information.",
             ]
         },
         {
@@ -92,7 +113,7 @@
             ]
         },
         {
-            title: "Sabre Air Merchandising",
+            title: "Sabre Ancillaries & Branded Fares",
             client: "Sabre Corporation",
             stack: "HTML, CSS, JS, PHP",
             thumb: { 
@@ -106,8 +127,8 @@
             link: "www.sabretravelnetwork.com/airmerchandising",
             features:[
                 "Fully responsive for accessibility and use on any device.",
-                "Custom backend using Single Sign On APIs to allow the owner of the application to update information as needed, using employee login credentials.",
-                "Backend fetches query results from the database, constructs a JSON object, which is then returned to the front end.",
+                "Content management interface using Single Sign On APIs to allow the owner of the application to update information as needed, using employee login credentials.",
+                "Customized back-end API fetches query results from the database, constructs a JSON object, which is then returned to the front end.",
                 "Multi dimensional search and filter functionality to allow the user to find information quickly and accurately.",
                 "Export results as a CSV for offline access.",
                 "One of the most viewed and widely used applications for the targeted customer base on the corporate website."
@@ -137,48 +158,6 @@
             ]
         },
         // {
-        //     title: "Magnolia Property Company",
-        //     client: "Magnolia / House of Sticks",
-        //     stack: "Wordpress, PHP, JS",
-        //     thumb: { 
-        //         desktop: "magnoliapropcompany-desktop.jpg",
-        //         mobile: "magnoliapropcompany-mobile.jpg" 
-        //     },
-        //     desc: {
-        //         main: "Property management company website for corporate and business related information.",
-        //         more: "This website was developed alongside their customer facing LiveAtMagnolia.com to provide corporate and business related information about Magnolia Property Company."
-        //     },
-        //     link: "www.magnoliapropcompany.com",
-        //     features:[
-        //         "Fully responsive for accessibility and use on any device.",
-        //         "Consumes a RESTful API from LiveAtMagnolia.com for all of the property information, allowing all data to be controlled in one place and preventing having to double publish the same information.",
-        //         "RESTful API data is enabled via a custom plugin, allowing all data requested to be managed from within this site.",
-        //         "Custom Wordpress backend built into the theme to create an easy to use backend for the company to update and completely manage the site in house.",
-        //         "Javascript basic algorithms to calculate various statistics about total and individual property information.",
-        //     ]
-        // },
-        // {
-        //     title: "Sabre Color Palette",
-        //     client: "Sabre Corporation",
-        //     stack: "Javascript, HTML, CSS",
-        //     thumb: { 
-        //         desktop: "sabrecolors-desktop.jpg",
-        //         mobile: null 
-        //     },
-        //     desc: {
-        //         main: "Simple, yet functional color palette application allowing to quickly copy color values by clicking color swatch.",
-        //         more: "This application allows designers to quickly reference the corporate brand color palette. Additionally users can click color swatches to copy the value of the color to their clipboard in three different formats: HEX, RBG, and CMYK." 
-        //     },
-        //     link: "www.sabre.com/brand/colors/",
-        //     features:[
-        //         "Fully responsive for accessibility and use on any device.",
-        //         "Javascript generated markup for easy customization or updates.",
-        //         "Supports color values in HEX, RGB, and CMYK formats.",
-        //         "Click-to-copy functionality, clicking a color swatch copies selected value format to the clipboard.",
-        //         "Used by various design and develop related departments within Sabre."
-        //     ]
-        // },
-        // {
         //     title: "NAS Client",
         //     client: "House of Sticks",
         //     stack: "Laravel, Vue, Bootstrap",
@@ -187,8 +166,8 @@
         //         mobile: "hosnas-mobile.jpg" 
         //     },
         //     desc: {
-        //         main: "Web application for creative agency clients and vendors to access and share files stored on a network storage solution (NAS).",
-        //         more: "This application allows admins to create users, and assign projects to those users. Users can then login, view and contribute to project assets. Users have custom dashboards showing the projects they are assigned to."
+        //         main: "In-house web application for production agency clients and vendors to access and share files stored on a network storage solution (NAS).",
+        //         more: "Essentially a file sharing service, this application allows admins to create users, and assign projects to those users. Users can then login, view and contribute to project assets and files. Users have custom dashboards showing the projects they are assigned, along with files they have acces to for each project."
         //     },
         //     link: null,
         //     features:[
@@ -197,28 +176,6 @@
         //         "Projects can have multiple users assigned for a Many-To-Many relationship.",
         //         "Separate Admin and User models and authentication, allowing admins to control every aspect of the application, including granting permissions to users.",
         //         "Admin dashboard allows admins to create, read, update, and delete (CRUD) all data contained in the application. Users are allowed to read, and update."
-        //     ]
-        // },
-        // {
-        //     title: "Marie & Russell",
-        //     client: "Personal",
-        //     stack: "Bootstrap, JS, PHP, MySQL",
-        //     thumb: { 
-        //         desktop: "marieandrussell-desktop.png",
-        //         mobile: "marieandrussell-mobile.png" 
-        //     },
-        //     desc: {
-        //         main: "Couples wedding website primarily for general event and ceremony information and to accept rsvps and comments.",
-        //         more: "Post ceremony, this website also contains a stand alone gallery web app containing the full selection of photos taken during this wonderful occasion. The gallery can also be shared via a custom 'send to a friend' feature via email."
-        //     },
-        //     link: "www.marieandrussell.com",
-        //     features:[
-        //         "Design and full development.",
-        //         "Fully responsive for both the ceremony website and gallery web app.",
-        //         "Custom image favoriting system with PHP, JS/Ajax, and MySQL.",
-        //         "Custom jQuery modal/lightbox filled with dynamic content from the DOM.",
-        //         "Interactive map, using Google Map API, showing important locations for the event with custom location icons.",
-        //         "Facebook, Twitter, and Email sharing."
         //     ]
         // }
     ]

@@ -8,19 +8,22 @@
                 {
                     title: 'Linked In',
                     slug: 'linkedin',
-                    icon: 'icon_social_linkedin.svg',
+                    //icon: 'icon_social_linkedin.svg',
+                    icon: 'linkedin',
                     link: 'https://www.linkedin.com/in/russell-ramey-8554586b'
                 },
                 {
                     title: 'GitHub',
                     slug: 'github',
-                    icon: 'icon_social_github.svg',
+                    //icon: 'icon_social_github.svg',
+                    icon: 'github',
                     link: 'https://github.com/russellramey'
                 },
                 {
                     title: 'Email',
                     slug: 'email',
-                    icon: 'icon_social_email.svg',
+                    //icon: 'icon_social_email.svg',
+                    icon: 'email',
                     link: 'mailto:russelljramey@gmail.com'
                 },
             ]
@@ -29,4 +32,4 @@
             each profile in profiles
                 li(class="" + profile.slug + "" data-qt="" + profile.title + "")
                     a(href="" + profile.link + "" target="_blank" title="" + profile.title + "")
-                        img(src="images/" + profile.icon + "" width="auto" height="auto" alt="" + profile.title + "")
+                        img(src="https://api.mdisvg.com/v1/i/" + profile.icon + "?color=ffffff&size=50" width="auto" height="auto" alt="" + profile.title + "")

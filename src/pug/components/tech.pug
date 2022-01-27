@@ -8,6 +8,7 @@ include ../data/tech.pug
         ul.skills
             each skill in tech 
                 li.tech-item(data-qt="" + skill.title + "")
-                    img(src="images/tech/" + skill.icon + "" width="auto" height="auto" alt="" + skill.title + "")
+                    i(data-mdisvg="" + skill.icon + "" data-mdicolor="ffffff")
+                    //-img(src="https://api.mdisvg.com/v1/i/" + skill.icon + "?color=ffffff" width="auto" height="auto" alt="" + skill.title + "")
         br.clearfix
         a.button(href="/resume.html#technology" title="View more skills" target="_blank" style="clear:both") View all
