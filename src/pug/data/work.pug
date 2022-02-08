@@ -157,6 +157,32 @@
                 "Users are provided recommended company services based on their responses for each section." 
             ]
         },
+        {
+            title: "Brand Photo Library",
+            client: "Sabre Corporation",
+            stack: "Javascript, PHP",
+            thumb: { 
+                desktop: "photolibrary-desktop.jpg",
+                mobile: null
+            },
+            desc: {
+                main: "Internal web application to provide a repository of brand compliant and approved imagery to marketing employees.",
+                more: "Essentially an in-house version of Shutterstock, this application allows employees in various departments to search, filter and sort hundreds of brand approved images for use online, in social media, and in presentations or events. Designers from across the company can submit images, which are reviewed by the Global Brand team, and once approved will become part of the collection."
+            },
+            link: null,
+            features:[
+                "Search, filter and sort hundreds of images based on keyword, category, popularity, and layout orientation (landscape, portrait)",
+                "PHP backend with exposed API endpoints.",
+                "Vanilla javascript frontend.",
+                "Images can be uploaded in batches.",
+                "Images are stored in AWS S3 service using AWS SDK for PHP.",
+                "Images can be tagged and categorized for easy search functionality.",
+                "Application tracks image popularity via a download index.",
+                "Email notifications to users and admins upon image submission.",
+                "SSO integration for administrator authentication.",
+                "Dashboard for brand team administrators to manage submitted images (approve, reject, and edit individual images and/or details)."
+            ]
+        }
         // {
         //     title: "NAS Client",
         //     client: "House of Sticks",
